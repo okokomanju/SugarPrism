@@ -19,3 +19,15 @@ for(let i = 0; i < 120; i++){
 
   stars.appendChild(star);
 }
+
+const newsCard = document.querySelector(".glass-news");
+
+let t = 0;
+
+function floatNews() {
+  t += 0.01;
+  newsCard.style.transform = `translateY(${Math.sin(t) * 6}px)`;
+  requestAnimationFrame(floatNews);
+}
+
+floatNews();

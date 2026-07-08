@@ -141,11 +141,7 @@ margin-bottom:24px;
   text-shadow:0 0 24px rgba(255,255,255,.4);
 }
 
-.hero-text{
-  font-size:clamp(16px,2vw,22px);
-  margin-bottom:80px;
-  line-height:1.8;
-}
+/* hero-text removed */
 
 .hero-image{
   max-width:900px;
@@ -193,6 +189,88 @@ margin-bottom:24px;
   50%{transform:translate(-50%,10px);}
 }
 
+.news-section{
+
+    display:flex;
+    justify-content:center;
+    margin-top:100px;
+    margin-bottom:120px;
+
+}
+
+.glass-news{
+
+    width:700px;
+    max-width:90%;
+
+    padding:35px 40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.12);
+
+}
+
+.glass-news h2{
+
+    color:white;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+.news-item{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.news-item:last-of-type{
+
+    border:none;
+
+}
+
+.date{
+
+    color:white;
+
+    opacity:.7;
+
+    width:110px;
+
+    font-size:14px;
+
+}
+
+.news-item p{
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+/* news-btn removed */
+
 /* 仮セクション */
 
 .dummy{
@@ -200,6 +278,16 @@ margin-bottom:24px;
   padding:160px 24px;
   text-align:center;
   background:rgba(255,255,255,.05);
+  line-height:4.0;
+}
+
+.dummy p{
+  margin-bottom:18px;
+}
+
+/* セクション内の最初の段落だけ大きく表示 */
+.dummy > p:first-of-type{
+  font-size:clamp(20px,3.2vw,28px);
 }
 
 .dummy h2{
