@@ -270,6 +270,84 @@ margin-bottom:24px;
 }
 
 /* news-btn removed */
+.music-preview{
+
+    display:flex;
+    justify-content:center;
+    margin:120px 0;
+
+}
+
+.glass-music{
+
+    width:600px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:white;
+
+}
+
+.glass-music h2{
+
+    margin-bottom:10px;
+
+}
+
+.glass-music h3{
+    font-size: 35px;
+    margin-bottom: 20px; 
+}
+
+.glass-music h4{
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#playBtn{
+
+    margin-top:25px;
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#ffffff30;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#playBtn:hover{
+
+    background:#ffffff55;
+
+    transform:scale(1.05);
+
+}
+
+audio{
+    width:100%;
+    margin-top:20px;
+}
 
 /* 仮セクション */
 
