@@ -109,6 +109,43 @@ body{
   opacity:.6;
 }
 
+/* SNSリンク */
+/* SNSリンク右側縦配置 */
+  a i {
+    font-size: 50px;
+    color: #ffffff;
+    margin: 10px 0;
+    transition: transform 0.2s, filter 0.2s;
+  }
+
+  /* ホバー時（PC） */
+  a:hover i {
+  transform: scale(1.15);
+  filter: brightness(1.3); /* 少し明るく */
+  }
+
+/* アクティブ時（タップなど） */
+  a:active i {
+  transform: scale(0.9);
+  filter: brightness(0.8); /* 少し暗く */
+  }
+
+  .sns-links {
+    position: fixed;
+    right: 30px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 5;
+  }
+
+  .sns-links i {
+    font-size: 40px;
+  }
+
+
 /* ヒーロー */
 
 .hero{
@@ -351,7 +388,7 @@ audio{
 
 /* 仮セクション */
 
-.dummy{
+.concept{
   min-height:100vh;
   padding:160px 24px;
   text-align:center;
@@ -359,18 +396,19 @@ audio{
   line-height:4.0;
 }
 
-.dummy p{
+.concept p{
+  font-size:20px;
   margin-bottom:18px;
 }
 
-/* セクション内の最初の段落だけ大きく表示 */
-.dummy > p:first-of-type{
-  font-size:clamp(20px,3.2vw,28px);
-}
-
-.dummy h2{
+.concept h2{
   font-family:"Marcellus", serif;
   font-size:64px;
+  margin-bottom:24px;
+}
+
+.concept h3{
+  font-size:30px;
   margin-bottom:24px;
 }
 
